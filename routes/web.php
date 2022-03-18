@@ -8,6 +8,8 @@ use App\Http\Controllers\PostController;
 
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\FaqController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,3 +38,11 @@ Route::get('/products/create', [ProductController::class, 'create']);
 Route::get('/products/edit', [ProductController::class, 'edit']);
 
 Route::get('/products/delete', [ProductController::class, 'delete']);
+
+Route::get('/faq/', [FaqController::class, 'index']);
+
+Route::get('/faq/create', [FaqController::class, 'create']);
+
+Route::get('/faq/edit', [FaqController::class, 'edit']);
+
+Route::get('/faq/delete', [FaqController::class, 'delete']);
