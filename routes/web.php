@@ -10,6 +10,8 @@ use App\Http\Controllers\ProductController;
 
 use App\Http\Controllers\FaqController;
 
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,3 +48,11 @@ Route::get('/faq/create', [FaqController::class, 'create']);
 Route::get('/faq/edit', [FaqController::class, 'edit']);
 
 Route::get('/faq/delete', [FaqController::class, 'delete']);
+
+Route::get('/users/', [UserController::class, 'index']);
+
+Route::get('/users/create', [UserController::class, 'create']);
+
+Route::get('/users/edit', [UserController::class, 'edit']);
+
+Route::get('/users/delete', [UserController::class, 'delete']);
