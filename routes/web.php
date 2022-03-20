@@ -56,3 +56,5 @@ Route::get('/users/create', [UserController::class, 'create']);
 Route::get('/users/edit', [UserController::class, 'edit']);
 
 Route::get('/users/delete', [UserController::class, 'delete']);
+
+Route::get('/about_us', [HomeController::class, 'aboutUs']);

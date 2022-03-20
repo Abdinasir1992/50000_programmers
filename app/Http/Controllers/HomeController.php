@@ -9,6 +9,11 @@ class HomeController
     {
         echo "Главная страница";
     }
+
+    public function aboutUs()
+    {
+        echo "Страница О нас";
+    }
 }
 
 
